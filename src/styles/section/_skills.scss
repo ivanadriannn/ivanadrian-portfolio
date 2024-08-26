@@ -1,0 +1,280 @@
+@import '/src/styles/color/colors';
+@import '/src/styles/responsive/responsive';
+
+.skills-container{
+    background-color: #e8d3d3;
+    padding-bottom: 100px;
+}
+
+.skills-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    gap: 1rem;
+    padding-top: 2vw;
+    justify-content: center;
+}
+
+.skills-title h1{
+    color: $black;
+    font-size: 64px;
+}
+
+.slide-container {
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 5rem;
+    white-space: nowrap;
+}
+
+.slide-container img{
+    filter: grayscale(100%); 
+    transition: filter 0.3s ease;
+}
+
+.slide-container img:hover{
+    filter: grayscale(0%); 
+}
+
+.slide-show1{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    width: 100%;
+    animation: slideRight 35s linear infinite;
+}
+
+.slide-show2{
+    display: flex;
+    flex-direction: row ;
+    gap: 3rem;
+    width: 100%;
+    animation: slideLeft 35s linear infinite;
+}
+
+.slide-show1 img, .slide-show2 img{
+    margin: 0;
+}
+
+@keyframes slideLeft {
+    0% {
+      transform: translateX(105%);
+    }
+    100% {
+      transform: translateX(-150%);
+    }
+  }
+
+@keyframes slideRight {
+    0% {
+      transform: translateX(-150%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+}
+
+@media screen and (max-width: $large) {
+    .skills-title h1{
+        font-size: 50px;
+    }
+
+    .skills-title img{
+        width: 50px;
+    }
+
+    .slide-show1 img, .slide-show2 img{
+        width: 150px;
+    }
+
+    @keyframes slideLeft {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-165%);
+        }
+      }
+    
+    @keyframes slideRight {
+        0% {
+          transform: translateX(-165%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+    }
+
+}
+
+@media screen and (max-width: $slarge) {
+    .skills-container{
+        background-color: #e8d3d3;
+        padding-bottom: 70px;
+    }
+
+    .slide-container {
+        gap: 3rem;
+    }
+
+    .skills-title h1{
+        font-size: 46px;
+    }
+
+    .skills-title img{
+        width: 46px;
+    }
+
+    .slide-show1 img, .slide-show2 img{
+        width: 150px;
+    }
+
+    @keyframes slideLeft {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-185%);
+        }
+      }
+    
+    @keyframes slideRight {
+        0% {
+          transform: translateX(-185%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+    }
+
+}
+
+@media screen and (max-width: $medium) {
+    .skills-container{
+      background-color: #e8d3d3;
+      padding-bottom: 50px;
+    }
+    
+    .slide-container {
+        gap: 3rem;
+    }
+
+    .skills-title h1{
+      font-size: 42px;
+    }
+    
+    .skills-title img{
+      width: 42px;
+    }
+    
+    .slide-show1 img, .slide-show2 img{
+        width: 130px;
+      }
+      
+      @keyframes slideLeft {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-200%);
+        }
+      }
+    
+      @keyframes slideRight {
+        0% {
+          transform: translateX(-200%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+      }
+    }
+    @media screen and (max-width: $smedium) {
+      .skills-title h1{
+        font-size: 36px;
+      }
+    
+      .skills-title img{
+        width: 36px;  
+      }
+    
+    }
+    
+    @media screen and (max-width: $bsmall) {    
+      .skills-title{
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      .skills-title h1{
+        font-size: 26px;
+      }
+    
+      .skills-title img{
+        width: 26px;  
+      }
+      
+      .skills-container{
+        background-color: #e8d3d3;
+        padding-bottom: 50px;
+      }
+      
+      .slide-container {
+        gap: 2rem;
+    }
+
+    .slide-show1 img, .slide-show2 img{
+        width: 110px;
+    }
+
+    @keyframes slideLeft {
+        0% {
+          transform: translateX(105%);
+        }
+        100% {
+          transform: translateX(-305%);
+        }
+      }
+    
+    @keyframes slideRight {
+        0% {
+          transform: translateX(-310%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+    }
+}
+
+@media screen and (max-width: $small) {  
+    .skills-title h1{
+        font-size: 22px;
+    }
+
+    .skills-title img{
+        width: 22px;
+    }
+
+    @keyframes slideLeft {
+        0% {
+          transform: translateX(105%);
+        }
+        100% {
+          transform: translateX(-330%);
+        }
+      }
+    
+    @keyframes slideRight {
+        0% {
+          transform: translateX(-330%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+    }
+}
