@@ -1,30 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import "../../styles/section/_landing.scss";
-import Profile from "../../assets/image/profileIvan.svg"
-import Github from "../../assets/icon/Landing/githubIvan.svg"
-import Gmail from "../../assets/icon/Landing/gmailIvan.svg"
-import Instagram from "../../assets/icon/Landing/instagramIvan.svg"
-import Linkedin from "../../assets/icon/Landing/linkedinIvan.svg"
-import Button from "../../components/Button/Button.jsx"
-import Typed from 'react-typed'
-import cv from '../../assets/icon/Landing/cvIvan.svg'
+import Profile from "../../assets/image/profileIvan.svg";
+import Button from "../../components/Button/Button.jsx";
+import Typed from 'react-typed';
+import cv from '../../assets/icon/Landing/cvIvan.svg';
 import ParticlesBG from '../../components/Particles/ParticleBG.js';
-import { Fade, Bounce } from 'react-reveal';
+import { Fade } from 'react-reveal';
 
 const Landing = () => {
     return (
         <section className="landing-page" id='landing'>
-            <div className="landing-background" >
-                <ParticlesBG/>
+            <div className="landing-background">
+                <ParticlesBG />
             </div>
             <div className="landing-container">
                 <div className="landing-top">
-                    <div className="landing-decription">
+                    <div className="landing-description">
                         <div className="greetings">
                             <h1>
                                 <Typed
                                     strings={[
-                                    "Welcome to My Portfolio!"  
+                                        "Welcome to My Portfolio!"
                                     ]}
                                     typeSpeed={150}
                                     loop
@@ -37,33 +33,20 @@ const Landing = () => {
                         <div className="landing-job">
                             <h1>Junior Software Engineer</h1>
                         </div>
-                        <div className="landing-social-media">
-                            <a target="__blank" href="https://www.linkedin.com/in/ivan-adriannn/">
-                                <img src={Linkedin} alt="LinkedInIvan" />
-                            </a>
-                            <a target="__blank" href="https://github.com/ivanadriannn">
-                                <img src={Github} alt="GithubIvan" />
-                            </a>
-                            <a target="__blank" href="https://mail.google.com/mail/u/1/#inbox?compose=DmwnWrRnZnKMRkvhNJFJJwrkgbtzprlqJsBVgxJvxlcHKzvnxXKQVvdJlwvhqZnpJZjNzMxSZTKQ">
-                                <img src={Gmail} alt="GmailIvan" />
-                            </a>
-                            <a target="__blank" href="https://www.instagram.com/ivan_adriannn/">
-                                <img src={Instagram} alt="Instagram" />
-                            </a>
-                        </div>
                         <br />
                         <br />
                         <Fade top>
+                            <div className="landing-bottom">
+                                <Button image={cv} text="CV" link="https://drive.google.com/file/d/13rKU-QUcKzV5UWPxBOpvMDbkIsVo9r-u/view?usp=sharing" />
+                                <Button text="Portfolio >>" link="https://bit.ly/file-portfolioivan" />
+                            </div>
                             <div className="landing-profile">
                                 <img src={Profile} alt="" />
-                            </div>
-                            <div className="landing-bottom">
-                                <Button image={cv} text="See My CV" link="www.google.com" />
                             </div>
                         </Fade>
                     </div>
                 </div>
-            </div>  
+            </div>
         </section>
     );
 };
