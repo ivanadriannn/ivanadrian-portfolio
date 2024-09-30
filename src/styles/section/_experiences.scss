@@ -4,6 +4,8 @@
     width: 70%;
     margin: 0 auto;
     margin-top: 5vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .experience-line {
@@ -99,42 +101,5 @@
     transition: none !important;
 }
 
-@media (max-width: 768px) {
-    .experience-container {
-        width: 90%; 
-    }
 
-    .experience-item {
-        width: 100%;
-    }
-
-    .experience-item.left, .experience-item.right {
-        left: 0; 
-        text-align: center; 
-    }
-
-    .experience-item.right {
-        left: 0; 
-    }
-
-    .experience-node {
-        width: 40px; 
-        height: 40px; 
-    }
-}
-
-@media (max-width: 480px) {
-    .experience-container {
-        width: 95%;
-    }
-
-    .experience-item {
-        width: 100%; 
-    }
-
-    .experience-node {
-        width: 35px; 
-        height: 35px; 
-    }
-}
 
