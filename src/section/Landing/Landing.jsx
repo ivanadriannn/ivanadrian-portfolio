@@ -4,6 +4,9 @@ import Profile from "../../assets/image/profileIvan.svg";
 import Button from "../../components/Button/Button.jsx";
 import Typed from 'react-typed';
 import cv from '../../assets/icon/Landing/cvIvan.svg';
+import LinkedIn from '../../assets/icon/Footer/Linkedin.svg'
+import Github from '../../assets/icon/Footer/Github.svg'
+import Instagram from '../../assets/icon/Footer/Instagram.svg'
 import ParticlesBG from '../../components/Particles/ParticleBG.js';
 import { Fade } from 'react-reveal';
 
@@ -32,6 +35,17 @@ const Landing = () => {
                         </div>
                         <div className="landing-job">
                             <h1>Junior Software Engineer</h1>
+                        </div>
+                        <div className="landing-social-media">
+                            <a target="__blank" href="https://www.linkedin.com/in/ivan-adriannn/">
+                                <img src={LinkedIn} alt="LinkedInIvan" />
+                            </a>
+                            <a target="__blank" href="https://github.com/ivanadriannn">
+                                <img src={Github} alt="GithubIvan" />
+                            </a>
+                            <a target="__blank" href="https://www.instagram.com/ivan_adriannn/">
+                                <img src={Instagram} alt="Instagram" />
+                            </a>
                         </div>
                         <br />
                         <br />

@@ -2,8 +2,8 @@
 @import '/src/styles/responsive/responsive';
 
 .skills-container{
-    background-color: #e8d3d3;
-    padding-bottom: 100px;
+  background-color: #e8d3d3;
+  padding-bottom: 70px;
 }
 
 .skills-title{
@@ -60,6 +60,32 @@
 .slide-show1 img, .slide-show2 img{
     margin: 0;
 }
+
+.additional-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  margin-top: 20px; 
+
+  .skill-circle {
+      width: 200px;
+      height: 200px; 
+      border-radius: 50%; 
+      background-color: #f0f0f0;
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      margin: 20px; 
+      overflow: hidden; 
+
+      img {
+          width: 70%; 
+          height: 70%;
+          object-fit: contain; 
+      }
+  }
+}
+
 
 @keyframes slideLeft {
     0% {

@@ -26,21 +26,21 @@ body{
 
 .greetings h1{
     font-size: 40px;
-    color: $black;
+    color: 	#FFFFFF;
     margin: 1px;
     text-align: center;
 }
 
 .landing-name h1{
     font-size: 64px;
-    color: $black;
+    color: 	#FFFFFF;
     margin: 1px;
     text-align: center;
 }
 
 .landing-job h1{
     font-size: 48px;
-    color: #ea4e4e;
+    color: 	#FFFFFF;
     margin: 1px;
     text-align: center;
 }
@@ -74,12 +74,26 @@ body{
     margin-left: 4.5vw;
 }
 
+.landing-bottom2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 70px;
+    margin-left: 5vw;
+}
+
 .landing-bottom p{
     margin-top: 1rem;
     color: #4242428e;
 }
 
 .landing-bottom Button{
+    background-color: #ea4e4e;
+    margin: 0 20px;
+}
+
+.landing-bottom2 Button{
     background-color: #ea4e4e;
     margin: 0 20px;
 }
@@ -95,19 +109,20 @@ body{
 
     .greetings h1{
         font-size: 35px;
-        color: $black;
+        color: #FFFFFF;
+        ;
         margin: 1.5px;
     }
     
     .landing-name h1{
         font-size: 50px;
-        color: $black;
+        color: #FFFFFF;
         margin: 1.5px;
     }
     
     .landing-job h1{
         font-size: 40px;
-        color: #ea4e4e;
+        color: #FFFFFF;
         margin: 1.5px;
     }
     
@@ -142,19 +157,19 @@ body{
 
     .greetings h1{
         font-size: 30px;
-        color: $black;
+        color: #FFFFFF;
         margin: 1.5px;
     }
     
     .landing-name h1{
         font-size: 45px;
-        color: $black;
+        color: #FFFFFF;
         margin: 1.5px;
     }
     
     .landing-job h1{
         font-size: 35px;
-        color: #ea4e4e;
+        color: #FFFFFF;
         margin: 1.5px;
     }
     
@@ -189,19 +204,19 @@ body{
 
     .greetings h1{
         font-size: 25px;
-        color: $black;
+        color: #FFFFFF;
         margin: 1.5px;
     }
     
     .landing-name h1{
         font-size: 35px;
-        color: $black;
+        color: #FFFFFF;
         margin: 1.5px;
     }
     
     .landing-job h1{
         font-size: 30px;
-        color: #ea4e4e;
+        color: #FFFFFF;
         margin: 1.5px;
     }
     
@@ -245,19 +260,19 @@ body{
 
     .greetings h1{
         font-size: 20px;
-        color: $black;
+        color: #FFFFFF;
         margin: 1.5px;
     }
     
     .landing-name h1{
         font-size: 30px;
-        color: $black;
+        color: #FFFFFF;
         margin: 1.5px;
     }
     
     .landing-job h1{
         font-size: 25px;
-        color: #ea4e4e;
+        color: #FFFFFF;
         margin: 1.5px;
     }
     
@@ -306,19 +321,19 @@ body{
 
     .greetings h1{
         font-size: 17px;
-        color: $black;
+        color: #FFFFFF;
         margin: 1.5px;
     }
     
     .landing-name h1{
         font-size: 27px;
-        color: $black;
+        color: #FFFFFF;
         margin: 1.5px;
     }
     
     .landing-job h1{
         font-size: 22px;
-        color: #ea4e4e;
+        color: #FFFFFF;
         margin: 1.5px;
     }
     

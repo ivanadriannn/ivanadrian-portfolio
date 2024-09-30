@@ -8,8 +8,8 @@ import Skills from "../section/Skills/Skills.jsx";
 import Projects from "../section/Projects/Projects.jsx";
 import Contact from "../section/Contact/Contact.jsx";
 import Footer from "../components/Footer/Footer.jsx";
-
 import "../styles/color/_colors.scss";
+import Experience from "../section/Experience/Experience.jsx";
 
 function Portfolio(){
     return (
@@ -18,6 +18,7 @@ function Portfolio(){
             <Landing/>
             <About/>
             <SkillsnProjects/>
+            <Experience/>
             <Skills/>
             <Projects/>
             <Contact/>

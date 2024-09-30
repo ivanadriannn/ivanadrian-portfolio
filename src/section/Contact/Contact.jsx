@@ -1,13 +1,14 @@
 import React, { useState, useRef } from "react";
 import "../../styles/section/_contact.scss";
-import {Input} from 'technotic';
-import Button from "../../components/Button/Button.jsx"
-import contactIcon from '../../assets/icon/Contact/Contact.svg'
-import Gmail from '../../assets/icon/Contact/Gmail.svg'
-import Line from '../../assets/icon/Contact/Line.svg'
-import Whatsapp from '../../assets/icon/Contact/Whatsapp.svg'
-import Submit from '../../assets/icon/Contact/Submit.svg'
-import {Zoom} from 'react-reveal'
+import { Input } from 'technotic';
+import Button from "../../components/Button/Button.jsx";
+import contactIcon from '../../assets/icon/Contact/Contact.svg';
+import Gmail from '../../assets/icon/Contact/Gmail.svg';
+import Line from '../../assets/icon/Contact/Line.svg';
+import Whatsapp from '../../assets/icon/Contact/Whatsapp.svg';
+import Submit from '../../assets/icon/Contact/Submit.svg';
+import Photo from '../../assets/icon/Contact/fotocontact.png';
+import { Zoom } from 'react-reveal';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -22,7 +23,7 @@ const Contact = () => {
     const email = form.current.user_email.value;
     const subject = form.current.user_subject.value;
     const message = form.current.message.value;
-    
+
     if (!name || !email || !subject || !message) {
       setValidationError("Please fill in all the required fields.");
       return;
@@ -33,8 +34,8 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          console.log("message sent");
-          setIsSubmitted(true); 
+          console.log("Message sent");
+          setIsSubmitted(true);
           setValidationError("");
         },
         (error) => {
@@ -43,74 +44,82 @@ const Contact = () => {
       );
   };
 
-  return(
+  return (
     <section className="contact" id="contact">
       <div className="contact-container">
+        {/* Title Section */}
         <div className="contact-title">
-          <img src={contactIcon} alt="" />
+          <img src={contactIcon} alt="Contact Icon" />
           <h1>Reach Me</h1>
         </div>
+
+        {/* Contact Card Section */}
         <Zoom bottom>
           <div className="contact-card">
+            {/* Left Section with Profile and Contact Information */}
             <div className="contact-left">
-              <p>Programming is not about<br/> what you know; it’s about <br/> what you can figure out<br/></p>
+              <p>Coding is more about problem-solving<br /> than memorizing syntax.<br /> Let's find solutions together!</p>
               <div className="social-media">
                 <div className="list-social-media">
-                  <img src={Whatsapp} alt="" />
+                  <img src={Whatsapp} alt="WhatsApp Icon" />
                   <p>08979780001</p>
                 </div>
                 <div className="list-social-media">
-                  <img src={Line} alt="" />
+                  <img src={Line} alt="Line Icon" />
                   <p>ivanadrian_</p>
                 </div>
                 <div className="list-social-media">
-                  <img src={Gmail} alt="" />
+                  <img src={Gmail} alt="Gmail Icon" />
                   <p>ivan.adrian@binus.ac.id</p>
+                </div>
+                <div className="contact-photo">
+                  <img src={Photo} alt="Profile Photo" />
                 </div>
               </div>
             </div>
+
+            {/* Right Section with Form */}
             <div className="contact-right">
               {isSubmitted ? (
                 <div className="success-message">Message sent successfully!</div>
-                  ) : (
-                    <form ref={form} onSubmit={sendEmail} className="contact-form">
-                      <h1>Feel Free to Contact Me</h1>
+              ) : (
+                <form ref={form} onSubmit={sendEmail} className="contact-form">
+                  <h1>Feel Free to Contact Me</h1>
 
-                      <div className="contact-input">
-                        
-                        <Input.TextField 
-                        inputSize={'large'}
-                        fontSize={'24px'}
-                        textPlaceholder={'Name'}
-                        name="user_name"/>
+                  <div className="contact-input">
+                    <Input.TextField
+                      inputSize={'large'}
+                      fontSize={'24px'}
+                      textPlaceholder={'Name'}
+                      name="user_name" />
+                    <Input.TextField
+                      inputSize={'large'}
+                      fontSize={'24px'}
+                      textPlaceholder={'Email'}
+                      name="user_email" />
+                    <Input.TextField
+                      inputSize={'large'}
+                      fontSize={'24px'}
+                      textPlaceholder={'Subject'}
+                      name="user_subject" />
+                    <Input.TextField
+                      inputSize={'large'}
+                      fontSize={'24px'}
+                      textPlaceholder={'Message'}
+                      name="message" />
+                  </div>
 
-                        <Input.TextField 
-                        inputSize={'large'}
-                        fontSize={'24px'}
-                        textPlaceholder={'Email'}
-                        name="user_email"/>
-
-                        <Input.TextField 
-                        inputSize={'large'}
-                        fontSize={'24px'}
-                        textPlaceholder={'Subject'}
-                        name="user_subject"/>
-
-                        <Input.TextField 
-                        inputSize={'large'}
-                        fontSize={'24px'}
-                        textPlaceholder={'Message'}
-                        name="message"/>
-                      </div>
-
-                      {validationError && (
-                        <div className="validation-error">{validationError}</div>
-                      )}
-                      <div className="right-button">
-                          <Button text='Submit' image={Submit}/>
-                      </div>
-                    </form>
+                  {/* Validation Error Display */}
+                  {validationError && (
+                    <div className="validation-error">{validationError}</div>
                   )}
+
+                  {/* Submit Button */}
+                  <div className="right-button">
+                    <Button text='Submit' image={Submit} />
+                  </div>
+                </form>
+              )}
             </div>
           </div>
         </Zoom>

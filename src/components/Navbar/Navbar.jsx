@@ -62,8 +62,15 @@ class Navbar extends Component{
               </li>
               <li>
                 <a href="">
+                  <Link to="experiences" spy={true} smooth={true} offset={-50} duration={500} onClick={this.handleMenuItemClick}>
+                    Experiences
+                  </Link> 
+                </a>
+              </li>
+              <li>
+                <a href="">
                   <Link to="skills" spy={true} smooth={true} offset={-50} duration={500} onClick={this.handleMenuItemClick}>
-                    Skills
+                   Skills
                   </Link> 
                 </a>
               </li>
