@@ -15,7 +15,7 @@ const Certificates = () => {
             <div className="certificates-container">
                 <div className="certificates-title">
                     <img src={AchievementIcon} alt="" />
-                    <h1>Certificate & Achievements</h1>
+                    <h1>Certification</h1>
                 </div>
                 <div className="certificates-content">
                     
