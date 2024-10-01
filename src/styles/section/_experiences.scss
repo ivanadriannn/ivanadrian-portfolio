@@ -24,7 +24,7 @@
     padding: 10px 20px;
     box-sizing: border-box;
     z-index: 2;
-    margin: 10px 0; // Menambahkan margin agar lebih kompak
+    margin: 10px 0; 
   }
   
   .experience-item.left {
@@ -114,17 +114,18 @@
   @media (max-width: 768px) {
     .experience-container {
       padding: 20px 0; 
+      margin-top: 0;
     }
   
     .experience-line {
-      margin-top: 5vw; // Mengurangi jarak atas
-      margin-bottom: 5vw; // Mengurangi jarak bawah
+      margin-top: 5vw; 
+      margin-bottom: 5vw; 
     }
   
     .experience-item {
       width: 90%;
       text-align: center;
-      margin: 2px 0; // Mengurangi margin antar item
+      margin: 2px 0;
     }
   
     .experience-item.left,

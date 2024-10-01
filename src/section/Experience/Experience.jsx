@@ -23,13 +23,10 @@ const Experience = () => {
 
     return (
         <div id="experiences" className="experience-container">
-            {/* Garis tengah experience */}
             <div className="experience-line"></div>
-            {/* Iterasi dan rendering experience */}
             {experiences.map((exp, index) => (
                 <div key={index} className={`experience-item ${index % 2 === 0 ? 'left' : 'right'}`}>
                     <div className="experience-content">
-                        {/* Menampilkan logo di posisi yang sesuai */}
                         {index % 2 === 0 ? (
                             <img src={exp.logo} alt={`${exp.title} logo`} className="experience-logo left-logo" />
                         ) : null}
@@ -43,7 +40,6 @@ const Experience = () => {
                             <img src={exp.logo} alt={`${exp.title} logo`} className="experience-logo right-logo" />
                         ) : null}
                     </div>
-                    {/* Node untuk menandai timeline */}
                     <div className="experience-node"></div>
                 </div>
             ))}

@@ -40,16 +40,15 @@ const PhotoCarousel = () => {
     Carousel15
   ];
 
-  // Konfigurasi slider
   const settings = {
     dots: true,
     infinite: true,
-    speed: 50, // Mempercepat transisi (200 ms)
+    speed: 50, 
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true, // Menjalankan secara otomatis
-    autoplaySpeed: 500, // Mengurangi waktu sebelum berpindah ke slide berikutnya (1.5 detik)
-    pauseOnHover: true, // Menghentikan autoplay saat mouse hover
+    autoplay: true, 
+    autoplaySpeed: 500, 
+    pauseOnHover: true, 
   };
 
   return (
