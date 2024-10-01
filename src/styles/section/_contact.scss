@@ -9,7 +9,7 @@
         border-radius: 10px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         background: #fff;
-        width: 100%
+        width: 100%;
     }
 
     .contact-title {
@@ -126,6 +126,29 @@
             &:hover {
                 background-color: #d43c3c; 
             }
+        }
+    }
+
+    // Media Queries
+    @media (max-width: 768px) {
+        .contact-card {
+            flex-direction: column;
+        }
+
+        .contact-left {
+            padding: 20px;
+            .contact-photo {
+                position: static;
+                margin-top: 20px;
+                transform: none;
+                img {
+                    width: 150px; // Adjusted size for mobile
+                }
+            }
+        }
+
+        .contact-right {
+            padding: 30px; // Adjust padding for mobile
         }
     }
 }
