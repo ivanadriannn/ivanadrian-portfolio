@@ -1,0 +1,218 @@
+@import '/src/styles/color/colors';
+@import '/src/styles/responsive/responsive';
+
+.certificates-title{
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    gap: 1rem;
+    justify-content: center;
+    padding-top: 7vw;
+}
+
+.certificates-title h1{
+    font-size: 64px;
+    color: $white;
+}
+
+.certificates-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    background-size: cover;
+    gap: 4rem;
+}
+
+.certificates-row{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.certificates-row img{
+    margin: 0;
+    transition: all 0.2s;
+    transform: translateY(0);
+}
+
+.certificates-row .card-image img:hover{
+    transform: translateY(5px) ;
+}
+
+.certificates-content {
+    .ant-card {
+        border: 2px solid red; 
+        border-radius: 10px;
+
+        .ant-card-body {
+            background-color: #ea4e4e; 
+            color: #333; 
+        }
+
+        .ant-card-meta-title {
+            color: $white ; 
+        }
+
+        .ant-card-meta-description {
+            color: $white; 
+        }
+    }
+}
+
+.tech{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0.7rem;
+}
+
+.tech .list-tech{
+    padding: 1px 15px;
+    border-radius: 10px;
+    color: $white;
+    border: $white 1px solid;
+    transition: linear 0.2s;
+}
+
+.tech .list-tech:hover{
+    background-color: #e8d3d3;
+    padding: 1px 15px;
+    border-radius: 10px;
+    color: $black;
+    border: $white-main 1px solid;
+}
+
+@media screen and (max-width: $large) {
+    .certificates-title h1{
+        font-size: 50px;
+    }
+    
+    .certificates-title img{
+        width: 50px;
+    }
+
+    .certificates-row .card-image img{
+        width: 30px;
+    }
+    
+}
+
+@media screen and (max-width: $slarge) {
+    .certificates-title h1{
+        font-size: 46px;
+    }
+    
+    .certificates-title img{
+        width: 46px;
+    }
+
+    .certificates-row .card-image img{
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: $medium) {
+
+    .certificates-content{
+        .ant-card {
+            border: 2px solid red; 
+            border-radius: 10px;
+    
+            .ant-card-body {
+                background-color: #ea4e4e; 
+                color: #333; 
+            }
+    
+            .ant-card-meta-title {
+                color: $white ; 
+            }
+    
+            .ant-card-meta-description {
+                color: $white; 
+            }
+        }
+    }
+
+    .certificates-title h1{
+        font-size: 42px;
+    }
+    
+    .certificates-title img{
+        width: 42px;
+    }
+
+    .certificates-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .certificates-row .card-image img{
+        width: 30px;
+    }
+}
+@media screen and (max-width: $smedium) {
+    .certificates-title h1{
+      font-size: 36px;
+    }
+  
+    .certificates-title img{
+      width: 36px;  
+    }
+  
+  }
+@media screen and (max-width: $bsmall) {
+
+    .certificates-title{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .certificates-title h1{
+        font-size: 26px;
+      }
+    
+      .certificates-title img{
+        width: 26px;  
+      }
+
+    .certificates-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .certificates-row .card-image img{
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: $small) {
+
+    .contact-container{
+        height: 100vh;
+    }
+
+    .certificates-title{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .certificates-title h1{
+        font-size: 22px;
+    }
+    
+    .certificates-title img{
+        width: 22px;
+    }
+
+    .certificates-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .certificates-row .card-image img{
+        width: 30px;
+    }
+}

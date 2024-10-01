@@ -10,6 +10,7 @@ import Contact from "../section/Contact/Contact.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import "../styles/color/_colors.scss";
 import Experience from "../section/Experience/Experience.jsx";
+import Certificate from "../section/Certificate/Certificate.jsx";
 
 function Portfolio(){
     return (
@@ -21,6 +22,7 @@ function Portfolio(){
             <Experience/>
             <Skills/>
             <Projects/>
+            <Certificate/>
             <Contact/>
             <Footer/>
         </div>
