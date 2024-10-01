@@ -44,11 +44,11 @@ const PhotoCarousel = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 1500, // Mempercepat transisi (200 ms)
+    speed: 50, // Mempercepat transisi (200 ms)
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true, // Menjalankan secara otomatis
-    autoplaySpeed: 2000, // Mengurangi waktu sebelum berpindah ke slide berikutnya (1.5 detik)
+    autoplaySpeed: 500, // Mengurangi waktu sebelum berpindah ke slide berikutnya (1.5 detik)
     pauseOnHover: true, // Menghentikan autoplay saat mouse hover
   };
 
