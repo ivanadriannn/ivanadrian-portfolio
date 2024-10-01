@@ -10,6 +10,7 @@ import Contact from "../section/Contact/Contact.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import "../styles/color/_colors.scss";
 import Experience from "../section/Experience/Experience.jsx";
+import PhotoCarousel from "../section/PhotoCarousel/PhotoCarousel.jsx";
 import Certificate from "../section/Certificate/Certificate.jsx";
 
 function Portfolio(){
@@ -19,6 +20,7 @@ function Portfolio(){
             <Landing/>
             <About/>
             <SkillsnProjects/>
+            <PhotoCarousel/>
             <Experience/>
             <Skills/>
             <Projects/>

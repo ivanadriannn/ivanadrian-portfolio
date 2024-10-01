@@ -1,0 +1,20 @@
+.photo-carousel {
+    position: relative; // Agar posisi slider dapat diatur
+    width: 100vw; // Lebar penuh
+    height: 100vh; // Tinggi penuh
+    overflow: hidden; // Sembunyikan bagian yang keluar
+  
+    .carousel-item {
+      height: 100%; // Pastikan item slider memenuhi tinggi kontainer
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      img {
+        width: 100%; // Lebar penuh
+        height: 100%; // Tinggi penuh
+        object-fit: cover; // Memastikan gambar terpotong dengan baik
+      }
+    }
+  }
+  
