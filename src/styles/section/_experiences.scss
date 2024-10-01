@@ -1,4 +1,3 @@
-/* Container utama pengalaman */
 .experience-container {
     position: relative;
     padding: 50px 0;
@@ -9,10 +8,9 @@
     align-items: center;
 }
 
-/* Garis tengah yang menghubungkan semua pengalaman */
 .experience-line {
     position: absolute;
-    left: 50%; /* Awal posisi dari garis */
+    left: 50%; 
     top: 60px; 
     bottom: 60px;
     width: 6px; 
@@ -21,7 +19,6 @@
     z-index: 1;
 }
 
-/* Setiap item pengalaman */
 .experience-item {
     position: relative;
     width: 45%;
@@ -30,19 +27,16 @@
     z-index: 2;
 }
 
-/* Item sebelah kiri */
 .experience-item.left {
     left: 0;
     text-align: right;
 }
 
-/* Item sebelah kanan */
 .experience-item.right {
     left: 56%; 
     text-align: left;
 }
 
-/* Titik node yang menghubungkan garis ke konten */
 .experience-node {
     position: absolute;
     top: 50%;
@@ -56,20 +50,17 @@
     z-index: 3;
 }
 
-/* Node untuk item di kiri */
 .experience-item.left .experience-node {
     right: -25px; 
 }
 
-/* Node untuk item di kanan */
 .experience-item.right .experience-node {
     left: -25px; 
 }
 
-/* Konten pengalaman */
 .experience-content {
-    display: flex; /* Membuat layout fleksibel */
-    align-items: center; /* Vertikal rata tengah */
+    display: flex; 
+    align-items: center; 
     background-color: #f4f4f4;
     padding: 15px;
     border-radius: 8px;
@@ -79,12 +70,10 @@
     transition: box-shadow 0.3s ease; 
 }
 
-/* Menambah hover efek */
 .experience-item:hover .experience-content {
     box-shadow: 0 0 20px rgba(255, 255, 0, 1);
 }
 
-/* Garis penghubung di sebelah kiri */
 .experience-item.left::before {
     content: '';
     position: absolute;
@@ -97,7 +86,6 @@
     box-shadow: 0 0 5px yellow; 
 }
 
-/* Garis penghubung di sebelah kanan */
 .experience-item.right::before {
     content: '';
     position: absolute;
@@ -110,54 +98,102 @@
     box-shadow: 0 0 5px yellow; 
 }
 
-/* Menonaktifkan animasi */
 .experience-container * {
     animation: none !important;
     transition: none !important;
 }
 
-/* Logo untuk setiap pengalaman */
 .experience-logo {
-    width: 50px; /* Ukuran logo */
+    width: 50px; 
     height: 50px;
-    margin-right: 15px; /* Spasi antara logo dan teks */
+    margin-right: 15px; 
     border-radius: 50%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Media queries untuk tampilan kecil */
 @media (max-width: 768px) {
     .experience-container {
-        width: 50%; /* Lebar lebih besar untuk tampilan kecil */
-        padding: 8px; /* Menambahkan padding */
-        position: relative;
+        width: 90%; 
         justify-content: center;
         align-items: center;
     }
 
+    .experience-line {
+        left: 50%; 
+        margin-top: 20vw;
+        margin-bottom: 20vw
+    }
+
     .experience-item {
-        width: 100%; /* Memperlebar item */
-        text-align: center; /* Memusatkan teks */
-        margin: 10px 0; /* Menambahkan margin atas dan bawah */
+        width: 100%; 
+        text-align: center; 
+        margin: 10px 0; 
+    }
+
+    .experience-item.left, .experience-item.right {
+        left: 0; 
+        text-align: center; 
+    }
+
+    .experience-node {
+        display: none; 
+    }
+
+    .experience-item.left::before,
+    .experience-item.right::before {
+        display: none; 
     }
 
     .experience-content {
-        font-size: 12px; /* Mengurangi ukuran font */
-        padding: 10px; /* Mengurangi padding */
+        font-size: 12px; 
+        padding: 10px; 
     }
 
     .experience-logo {
-        width: 40px; /* Mengurangi ukuran logo */
+        width: 40px; 
         height: 40px;
     }
+}
 
-    .experience-item.left::before {
-        width: 0px; 
-        height: 0; 
+@media (max-width: 468px) {
+    .experience-container {
+        width: 100%; 
+        justify-content: center;
+        align-items: center;
     }
 
+    .experience-line {
+        left: 50%; 
+    }
+
+    .experience-item {
+        width: 100%; 
+        text-align: center; 
+        margin: 10px 0; 
+    }
+
+    .experience-item.left, .experience-item.right {
+        left: 0;
+        text-align: center; 
+    }
+
+    .experience-node {
+        display: none; 
+    }
+
+    .experience-item.left::before,
     .experience-item.right::before {
-        width: 0px; 
-        height: 0px; 
+        display: none;
+    }
+
+    .experience-content {
+        font-size: 10px; 
+        padding: 8px; 
+    }
+
+    .experience-logo {
+        width: 30px;
+        height: 30px;
     }
 }
+
