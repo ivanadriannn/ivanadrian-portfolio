@@ -14,7 +14,7 @@ import Carousel7 from "../../assets/icon/PhotoCarousel/carousel7.png";
 import Carousel8 from "../../assets/icon/PhotoCarousel/carousel8.png";
 import Carousel9 from "../../assets/icon/PhotoCarousel/carousel9.png";
 import Carousel10 from "../../assets/icon/PhotoCarousel/carousel10.png";
-import Carousel11 from "../../assets/icon/PhotoCarousel/carousel11.png";
+import Carousel11 from "../../assets/icon/PhotoCarousel/carousel11.jpg";
 import Carousel12 from "../../assets/icon/PhotoCarousel/carousel12.png";
 import Carousel13 from "../../assets/icon/PhotoCarousel/carousel13.png";
 import Carousel14 from "../../assets/icon/PhotoCarousel/carousel14.png";
