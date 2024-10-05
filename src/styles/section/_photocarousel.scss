@@ -27,21 +27,28 @@
 @media (max-width: 768px) {
   .photo-carousel {
     width: 90%; 
-    height: 40vh; 
+    height: 25vh; 
   }
 }
 
 @media (max-width: 468px) {
   .photo-carousel {
     width: 95%; 
-    height: 30vh; 
+    height: 25vh; 
   }
 }
 
 @media (max-width: 355px) {
   .photo-carousel {
     width: 95%; 
-    height: 29vh; 
+    height: 25vh; 
+  }
+}
+
+@media (max-width: 300px) {
+  .photo-carousel {
+    width: 95%; 
+    height: 25vh; 
   }
 }
 
