@@ -19,6 +19,7 @@ import Carousel12 from "../../assets/icon/PhotoCarousel/carousel12.png";
 import Carousel13 from "../../assets/icon/PhotoCarousel/carousel13.png";
 import Carousel14 from "../../assets/icon/PhotoCarousel/carousel14.png";
 import Carousel15 from "../../assets/icon/PhotoCarousel/carousel15.png";
+import Carousel16 from "../../assets/icon/PhotoCarousel/carousel16.png";
 
 const PhotoCarousel = () => {
   // Array of photo URLs
@@ -37,7 +38,8 @@ const PhotoCarousel = () => {
     Carousel12,
     Carousel13,
     Carousel14,
-    Carousel15
+    Carousel15,
+    Carousel16
   ];
 
   const settings = {
