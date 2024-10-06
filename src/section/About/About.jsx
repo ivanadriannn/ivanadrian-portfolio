@@ -2,7 +2,6 @@ import React from "react";
 import "../../styles/section/_about.scss";
 import AboutIcon from "../../assets/icon/About/about.svg";
 import People from "../../assets/icon/About/people.svg";
-import ParticlesBG from '../../components/Particles/ParticleBG.js';
 import { Fade } from "react-reveal";
 
 const About = () => {
@@ -34,12 +33,12 @@ const About = () => {
                                     Streaming on Software Engineering and currently in my fifth term studying. I like
                                     overcoming challenges, can work well in a team, love to explore new things, and am
                                     able to work under pressure. I have good communication, presentation, teaching, and
-                                    negotiation skills. I am interested in web/mobile development, programming, design,
+                                    negotiation skills. I am interested in web or mobile development, programming, design,
                                     business, and technology. A good performance with high care, responsibility,
                                     commitment, and discipline are my aspects of life. I also joined several
                                     organizations to expand my skills to help me prepare for my career. One of them is
                                     called Bina Nusantara Computer Club, where I learn more both hard skills like
-                                    Web/Mobile Development/UI/UX Design and soft skills such as leadership, problem
+                                    Web-Mobile Development or UI/UX Design and soft skills such as leadership, problem
                                     solving, and critical thinking.
                                 </p>
                             </div>

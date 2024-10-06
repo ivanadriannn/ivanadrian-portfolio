@@ -1,8 +1,8 @@
 import React from 'react';
+import Typed from 'react-typed';
 import "../../styles/section/_landing.scss";
 import Profile from "../../assets/image/profileIvan.svg";
 import Button from "../../components/Button/Button.jsx";
-import Typed from 'react-typed';
 import cv from '../../assets/icon/Landing/cvIvan.svg';
 import LinkedIn from '../../assets/icon/Footer/Linkedin.svg'
 import Github from '../../assets/icon/Footer/Github.svg'

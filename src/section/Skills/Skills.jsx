@@ -48,28 +48,34 @@ const Skills = () => {
                     </div>
                 </div>
 
-                <br></br>
-                <br></br>
+                <br />
+                <br />
 
-                <div className="slide-container">    
-                    <div className="slide-show1">
-                        <img src={js} alt="js" />
-                        <img src={CSS} alt="CSS" />
-                        <img src={HTML} alt="HTML" />
-                        <img src={Typescript} alt="Typescript" />
-                        <img src={NodeJS} alt="NodeJS" />
-                        <img src={React1} alt="React" />
-                        <img src={Laravel} alt="Laravel" />
+                <div className="slide-container">
+                    {/* Container untuk slide-show1 */}
+                    <div className="slide-wrapper">
+                        <div className="slide-show1">
+                            <img src={js} alt="js" />
+                            <img src={CSS} alt="CSS" />
+                            <img src={HTML} alt="HTML" />
+                            <img src={Typescript} alt="Typescript" />
+                            <img src={NodeJS} alt="NodeJS" />
+                            <img src={React1} alt="React" />
+                            <img src={Laravel} alt="Laravel" />
+                        </div>
                     </div>
 
-                    <div className="slide-show2">
-                        <img src={Github} alt="Github" />
-                        <img src={Asp} alt="Asp" />
-                        <img src={Java} alt="Java" />
-                        <img src={Php} alt="Php" />
-                        <img src={MySql} alt="MySql" />
-                        <img src={Python} alt="Python" />
-                        <img src={C} alt="C" />
+                    {/* Container untuk slide-show2 */}
+                    <div className="slide-wrapper">
+                        <div className="slide-show2">
+                            <img src={Github} alt="Github" />
+                            <img src={Asp} alt="Asp" />
+                            <img src={Java} alt="Java" />
+                            <img src={Php} alt="Php" />
+                            <img src={MySql} alt="MySql" />
+                            <img src={Python} alt="Python" />
+                            <img src={C} alt="C" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -77,4 +83,4 @@ const Skills = () => {
     );
 };
 
-export default Skills; 
+export default Skills;

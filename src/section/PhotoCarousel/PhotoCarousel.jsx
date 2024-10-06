@@ -4,6 +4,7 @@ import "../../styles/section/_photocarousel.scss";
 import BackEnd from "../../assets/icon/Achievement/backend.png";
 import Mobile from "../../assets/icon/Achievement/mobile.png";
 import Intern from "../../assets/icon/Achievement/internfullstack.png";
+import Carousel1st from "../../assets/icon/PhotoCarousel/carousel1st.jpeg";
 import Carousel1 from "../../assets/icon/PhotoCarousel/carousel1.png";
 import Carousel2 from "../../assets/icon/PhotoCarousel/carousel2.png";
 import Carousel3 from "../../assets/icon/PhotoCarousel/carousel3.png";
@@ -24,6 +25,7 @@ import Carousel16 from "../../assets/icon/PhotoCarousel/carousel16.png";
 const PhotoCarousel = () => {
   // Array of photo URLs
   const photos = [
+    Carousel1st,
     Carousel1,
     Carousel2,
     Carousel3,

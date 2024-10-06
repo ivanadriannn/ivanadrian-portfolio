@@ -35,6 +35,9 @@
 .slide-container img{
     filter: grayscale(100%); 
     transition: filter 0.3s ease;
+    border: 2px solid red;
+    box-shadow: 0 4px 8px red; 
+    border-radius: 15px; 
 }
 
 .slide-container img:hover{
@@ -46,7 +49,7 @@
     flex-direction: row;
     gap: 3rem;
     width: 100%;
-    animation: slideRight 35s linear infinite;
+    animation: slideRight 25s linear infinite;
 }
 
 .slide-show2{
@@ -54,11 +57,20 @@
     flex-direction: row ;
     gap: 3rem;
     width: 100%;
-    animation: slideLeft 35s linear infinite;
+    animation: slideLeft 25s linear infinite;
 }
 
 .slide-show1 img, .slide-show2 img{
     margin: 0;
+}
+
+.slide-wrapper {
+  flex: 1; 
+  border: 2px solid red; 
+  padding: 10px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px red; 
+  background-color: black;
 }
 
 .additional-skills {
@@ -77,6 +89,9 @@
       justify-content: center; 
       margin: 20px; 
       overflow: hidden; 
+      border: 2px solid red;
+      box-shadow: 0 4px 8px red; 
+      border-radius: 200px; 
 
       img {
           width: 70%; 
