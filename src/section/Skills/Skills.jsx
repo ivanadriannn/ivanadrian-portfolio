@@ -15,6 +15,7 @@ import NodeJS from "../../assets/icon/Skills/nodejs.svg"
 import Typescript from "../../assets/icon/Skills/typescript.svg"
 import Php from "../../assets/icon/Skills/php.svg"
 import C from "../../assets/icon/Skills/c.svg"
+import Flutter from "../../assets/icon/Skills/flutter.png"
 import VisualStudio from "../../assets/icon/Skills/visualstudiocode.png"
 import VSCode from "../../assets/icon/Skills/vscode.png"
 import Figma from "../../assets/icon/Skills/figma.png"
@@ -45,6 +46,9 @@ const Skills = () => {
                     </div>
                     <div className="skill-circle">
                         <img src={GoogleCollab} alt="Google Collab" />
+                    </div>
+                    <div className="skill-circle">
+                        <img src={Flutter} alt="Google Collab" />
                     </div>
                 </div>
 
