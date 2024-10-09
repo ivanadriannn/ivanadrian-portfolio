@@ -34,7 +34,7 @@ const Landing = () => {
                             <h1>I'm Ivan Adrian</h1>
                         </div>
                         <div className="landing-job">
-                            <h1>Junior Software Engineer</h1>
+                            <h1>Software Developer</h1>
                         </div>
                         <div className="landing-social-media">
                             <a target="__blank" href="https://www.linkedin.com/in/ivan-adriannn/">
@@ -52,7 +52,7 @@ const Landing = () => {
                         <Fade top>
                             <div className="landing-bottom">
                                 <Button image={cv} text="CV" link="https://drive.google.com/file/d/13rKU-QUcKzV5UWPxBOpvMDbkIsVo9r-u/view?usp=sharing" />
-                                <Button text="Portfolio" link="https://bit.ly/file-portfolioivan" />
+                                <Button text="Portfolio" link="https://bit.ly/portfolioivanadrian" />
                             </div>
                             <div className="landing-profile">
                                 <img src={Profile} alt="" />

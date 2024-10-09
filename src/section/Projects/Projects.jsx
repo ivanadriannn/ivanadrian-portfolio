@@ -7,6 +7,7 @@ import Jetflix from "../../assets/image/jetflix.png"
 import Raiso from "../../assets/image/raiso.png"
 import FunMath from "../../assets/image/funmath.png"
 import OrelWestern from "../../assets/image/orel.png"
+import Edukami from "../../assets/image/edukami.png"
 import LevelUp from "../../assets/image/levelup.png"
 import CodeSmell from "../../assets/image/codesmell.png"
 import Calm from "../../assets/image/calm.png"
@@ -287,6 +288,46 @@ const Projects = () => {
                             <Card hoverable style={{ width: '350px',  fontFamily: 'Poppins'}}
                                 cover={
                                 <img style={{ width:'350px', marginLeft:'0.2px' }}
+                                    alt="Edukami"
+                                    src={Edukami}
+                                />
+                                }
+                                actions={[
+                                    <div className="card-image">
+                                        <a target="__blank" href="https://edukami-educational-website.vercel.app/">
+                                            <img src={Browse} alt="" />
+                                        </a>
+                                    </div>,
+                                    <div className="card-image">
+                                        <a target="__blank" href="https://github.com/ivanadriannn/Edukami_EducationalWebsite">
+                                            <img src={GithubIcon} alt="" />
+                                        </a>
+                                    </div>
+                                ]}  >
+                                    <Meta
+                                        title="Edukami"
+                                        description="
+Edukami is an educational site that empowers people with knowledge appropriate to the field they want to pursue. Here we can also choose a mentor to help users deepen their favorite field."
+                                        />
+                                    <div className="tech">
+                                        <div className="list-tech">
+                                            HMTL
+                                        </div>
+                                        <div className="list-tech">
+                                            CSS
+                                        </div>
+                                        <div className="list-tech">
+                                            JS
+                                        </div>
+                                    </div>
+                            </Card>
+                        </Fade>
+                    </div>
+                    <div className="projects-row">
+                    <Fade bottom>
+                            <Card hoverable style={{ width: '350px',  fontFamily: 'Poppins'}}
+                                cover={
+                                <img style={{ width:'350px', marginLeft:'0.2px' }}
                                     alt="Calm"
                                     src={Calm}
                                 />
@@ -312,8 +353,6 @@ const Projects = () => {
                                     </div>
                             </Card>
                         </Fade>
-                    </div>
-                    <div className="projects-row">
                         <Fade bottom>
                             <Card hoverable style={{ width: '350px',  fontFamily: 'Poppins'}}
                                 cover={
@@ -365,7 +404,7 @@ const Projects = () => {
                                 ]}  >
                                     <Meta
                                         title="Neko Finyace"
-                                        description="NekoFinyance is a financial application designed to help users efficiently monitor their expenses and income, plan short and long-term purchases, and provide automatic reminders when users start to waste or when financial targets have been achieved."
+                                        description="NekoFinyance is an apps to help users in monitoring their expenses and income, plan short and long-term purchases, and provide automatic reminders when users start to waste or when financial targets have been achieved."
                                         />
                                     <div className="tech">
                                         <div className="list-tech">
