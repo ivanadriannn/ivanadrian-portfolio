@@ -306,8 +306,7 @@ const Projects = () => {
                                 ]}  >
                                     <Meta
                                         title="Edukami"
-                                        description="
-Edukami is an educational site that empowers people with knowledge appropriate to the field they want to pursue. Here we can also choose a mentor to help users deepen their favorite field."
+                                        description="Edukami is an educational site that empowers people with knowledge appropriate to the field they want to pursue. Here we can also choose a mentor to help users deepen their favorite field."
                                         />
                                     <div className="tech">
                                         <div className="list-tech">
