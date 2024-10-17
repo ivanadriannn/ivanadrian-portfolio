@@ -51,7 +51,7 @@ const Landing = () => {
                         <br />
                         <Fade top>
                             <div className="landing-bottom">
-                                <Button image={cv} text="CV" link="https://drive.google.com/file/d/1R-nfk03ZlRJLMWk5ieHnPSgJzbAGFdvt/view?usp=sharing" />
+                                <Button image={cv} text="CV" link="https://drive.google.com/file/d/1MgYCipaKw7V-E9tbTMbvqYpzRC7u5eu9/view?usp=drive_link" />
                                 <Button text="Portfolio" link="https://bit.ly/portfolioivanadrian" />
                             </div>
                             <div className="landing-profile">
