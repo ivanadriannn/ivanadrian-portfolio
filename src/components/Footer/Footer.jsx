@@ -9,8 +9,7 @@ const Footer = () => {
         <footer>
             <div className="footer-container">
                 <div className="footer-text">
-                    <p>© 2024 Ivan's Portfolio, All Right Reserved</p>
-                    <p>Created by Ivan Adrian</p>
+                    <p>© 2024 Ivan Adrian's Portfolio, All Right Reserved</p>
                 </div>
                 <div className="footer-social-media">
                     <a href="https://www.linkedin.com/in/ivan-adriannn/">

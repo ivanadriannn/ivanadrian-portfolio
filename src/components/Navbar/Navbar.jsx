@@ -1,6 +1,6 @@
 import React, { Component, useState } from 'react';
 import "../../styles/components/_navbar.scss";
-import Logo from "../../assets/icon/logoIvan.svg";
+import Logo from "../../assets/icon/Logo.png";
 import { Link } from 'react-scroll';
 
 class Navbar extends Component{

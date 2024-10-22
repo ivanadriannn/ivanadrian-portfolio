@@ -33,15 +33,10 @@
 }
 
 .slide-container img{
-    filter: grayscale(100%); 
     transition: filter 0.3s ease;
     border: 2px solid red;
     box-shadow: 0 4px 8px red; 
-    border-radius: 15px; 
-}
-
-.slide-container img:hover{
-    filter: grayscale(0%); 
+    border-radius: 10px;
 }
 
 .slide-show1{

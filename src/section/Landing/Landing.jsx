@@ -34,7 +34,7 @@ const Landing = () => {
                             <h1>I'm Ivan Adrian</h1>
                         </div>
                         <div className="landing-job">
-                            <h1>Software Developer</h1>
+                            <h1>Application Developer</h1>
                         </div>
                         <div className="landing-social-media">
                             <a target="__blank" href="https://www.linkedin.com/in/ivan-adriannn/">

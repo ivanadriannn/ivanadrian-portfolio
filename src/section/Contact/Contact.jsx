@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import "../../styles/section/_contact.scss";
 import { Input } from 'technotic';
 import Button from "../../components/Button/Button.jsx";
-import contactIcon from '../../assets/icon/Contact/Contact.svg';
+import contactIcon from '../../assets/icon/Contact/contactme.png';
 import Gmail from '../../assets/icon/Contact/Gmail.svg';
 import Line from '../../assets/icon/Contact/Line.svg';
 import Whatsapp from '../../assets/icon/Contact/Whatsapp.svg';
@@ -58,7 +58,7 @@ const Contact = () => {
           <div className="contact-card">
             {/* Left Section with Profile and Contact Information */}
             <div className="contact-left">
-              <p>Coding is more about problem-solving<br /> than memorizing syntax.<br /> Let's find solutions together!</p>
+            <p>|| Undergraduate Computer Science Student at BINUS || <br /> || Streaming on Software Engineering || <br /></p>
               <div className="social-media">
                 <div className="list-social-media">
                   <img src={Whatsapp} alt="WhatsApp Icon" />
@@ -70,12 +70,14 @@ const Contact = () => {
                 </div>
                 <div className="list-social-media">
                   <img src={Gmail} alt="Gmail Icon" />
-                  <p>ivan.adrian@binus.ac.id</p>
+                  <p>ivanadriann02@gmail.com</p>
                 </div>
                 <div className="contact-photo">
                   <img src={Photo} alt="Profile Photo" />
                 </div>
               </div>
+              <br></br>
+            <p>Coding is more about problem-solving<br /> than memorizing syntax.<br /> Let's find solutions together!</p>
             </div>
 
             {/* Right Section with Form */}
@@ -84,7 +86,7 @@ const Contact = () => {
                 <div className="success-message">Message sent successfully!</div>
               ) : (
                 <form ref={form} onSubmit={sendEmail} className="contact-form">
-                  <h1>Feel Free to Contact Me</h1>
+                  <h1>Contact Me</h1>
 
                   <div className="contact-input">
                     <Input.TextField
