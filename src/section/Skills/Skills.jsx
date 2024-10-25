@@ -20,10 +20,10 @@ import VisualStudio from "../../assets/icon/Skills/visualstudiocode.png"
 import VSCode from "../../assets/icon/Skills/vscode.png"
 import Figma from "../../assets/icon/Skills/figma.png"
 import Golang from "../../assets/icon/Skills/golang.png"
-import Kotlin from "../../assets/icon/Skills/kotlin.png"
 import SQLServer from "../../assets/icon/Skills/sqlserver.png"
 import AndroidStudio from "../../assets/icon/Skills/androidstudio.png"
 import GoogleCollab from "../../assets/icon/Skills/googlecollab.png"
+import MonggoDB from "../../assets/icon/Skills/monggoDB.png"
 
 const Skills = () => {
     return (
@@ -47,6 +47,14 @@ const Skills = () => {
                     <div className="skill-circle">
                         <img src={Figma} alt="Figma" />
                     </div>
+                </div>
+                <div className="additional-skills">
+                    <div className="skill-circle">
+                        <img src={Golang} alt="Golang" />
+                    </div>
+                    <div className="skill-circle">
+                        <img src={Flutter} alt="Google Collab" />
+                    </div>
                     <div className="skill-circle">
                         <img src={GoogleCollab} alt="Google Collab" />
                     </div>
@@ -56,13 +64,7 @@ const Skills = () => {
                 </div>
                 <div className="additional-skills">
                     <div className="skill-circle">
-                        <img src={Golang} alt="Golang" />
-                    </div>
-                    <div className="skill-circle">
-                        <img src={Kotlin} alt="Kotlin" />
-                    </div>
-                    <div className="skill-circle">
-                        <img src={Flutter} alt="Google Collab" />
+                        <img src={MonggoDB} alt="MonggoDB" />
                     </div>
                 </div>
 
